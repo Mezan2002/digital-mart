@@ -1,6 +1,7 @@
 "use client";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import { AcmeLogo } from "../Icons/AcmeLogo";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,14 +12,22 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               href="#"
-              className="flex justify-center space-x-3 md:justify-start md:-ml-3.5"
+              className="flex items-center justify-center space-x-3 md:justify-start md:-ml-1.5"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
-                <AcmeLogo />
+              <div className="flex items-center justify-center rounded-full">
+                <Image
+                  src="https://i.ibb.co/Jsqf7SN/logo.png"
+                  alt="Digital Mart's Logo"
+                  width={500}
+                  height={500}
+                  className="h-10 w-10"
+                />
               </div>
-              <span className="self-center text-2xl font-semibold">ACME</span>
+              <p className="hidden md:block mt-2 font-bold text-inherit text-xl uppercase">
+                Digital Mart
+              </p>
             </a>
-            <p className="w-10/12">
+            <p className="w-10/12 mt-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               consectetur obcaecati veritatis est inventore vero quas dolorum
               quos, explicabo mollitia perspiciatis alias sapiente dolorem modi,
@@ -32,129 +41,81 @@ const Footer = () => {
               assumenda quibusdam.
             </p>
           </div>
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left mt-5">
             <p className="pb-1 md:text-lg text-sm font-bold">
               Customer Service
             </p>
-            <ul>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+            <ul className="flex flex-col items-start">
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Refund Policy
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Shipping & Return
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Term & Conditions
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Advanced Search
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Store Locations
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
-          <div className=" text-center md:text-left">
+          <div className=" text-center md:text-left mt-5">
             <p className="pb-1 md:text-lg text-sm font-bold">
               Shop By Categories
             </p>
-            <ul>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+            <ul className="flex flex-col items-start">
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Smartphone
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Headphones
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Computer & Desktop
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Cameras & Photos
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Laptop & Ipad
-                </a>
+                </Link>
               </li>
-              <li className="my-6 hover:translate-x-5 duration-500">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="hover:dark:text-violet-400"
-                >
+              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <Link href="/" className="">
                   Airpods
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
-          <div className=" text-center md:text-left">
+          <div className=" text-center md:text-left mt-5">
             <div>
               <p className="pb-1 md:text-lg text-sm font-bold">Contact Us</p>
               <p className="my-6">Got Question? Call us 24/7</p>
@@ -254,60 +215,36 @@ const Footer = () => {
               aria-label="Customer Service"
               title="Customer Service"
             >
-              <ul>
-                <li className="mb-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+              <ul className="flex flex-col items-start">
+                <li className="mb-6 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Refund Policy
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Shipping & Return
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Term & Conditions
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Advanced Search
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Store Locations
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </AccordionItem>
@@ -316,60 +253,36 @@ const Footer = () => {
               aria-label="Shop By Categories"
               title="Shop By Categories"
             >
-              <ul>
-                <li className="mb-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+              <ul className="flex flex-col items-start">
+                <li className="mb-6 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Smartphone
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Headphones
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Computer & Desktop
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Cameras & Photos
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Laptop & Ipad
-                  </a>
+                  </Link>
                 </li>
-                <li className="my-6 hover:translate-x-5 duration-500">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="hover:dark:text-violet-400"
-                  >
+                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                  <Link href="/" className="">
                     Airpods
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </AccordionItem>
@@ -472,12 +385,12 @@ const Footer = () => {
         <div className="grid justify-center pt-6 lg:justify-between">
           <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
             <span>© 2024 Umino Store. All Rights Reserved.</span>
-            <a className="mt-5 md:mt-0">
+            <Link href="/" className="mt-5 md:mt-0">
               <span>Privacy policy</span>
-            </a>
-            <a className="my-2 md:my-0">
+            </Link>
+            <Link href="/" className="my-2 md:my-0">
               <span>Terms of service</span>
-            </a>
+            </Link>
           </div>
           <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
             <a
