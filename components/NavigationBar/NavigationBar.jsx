@@ -124,13 +124,13 @@ const NavigationBar = () => {
             </div>
           </div>
           <div className="hidden md:block mt-3">
-            <Badge content="0" size="md">
+            <Badge content="0" size="md" className="bg-indigo-500 text-white">
               <AiOutlineHeart size={32} />
             </Badge>
           </div>
           <div className="mt-2">
             <div className="flex items-center">
-              <Badge content="0" size="md">
+              <Badge content="0" size="md" className="bg-indigo-500 text-white">
                 <AiOutlineShoppingCart size={32} />
               </Badge>
               <div className="ml-2 mb-1 hidden md:block">

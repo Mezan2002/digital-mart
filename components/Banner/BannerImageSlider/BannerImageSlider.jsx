@@ -12,7 +12,7 @@ const BannerImageSlider = () => {
       subTitle: "Hot Deals Headphones",
       image: "https://i.ibb.co/rdJWxpg/asset-24.jpg",
     },
-    {
+    /* {
       title: "Best Sales",
       subTitle: "Best Deals Keyborads",
       image: "https://i.ibb.co/8YPLxRj/asset-23.jpg",
@@ -21,7 +21,7 @@ const BannerImageSlider = () => {
       title: "Top Deals",
       subTitle: "Top Deals Accesories",
       image: "https://i.ibb.co/sVgj4Vt/Untitled-design.png",
-    },
+    }, */
   ];
   return (
     <div>
@@ -46,9 +46,8 @@ const BannerImageSlider = () => {
                 {dt.subTitle}
               </h5>
               <Button
-                color="primary"
                 radius="full"
-                className="uppercase text-sm font-bold"
+                className="uppercase bg-indigo-500 text-white text-sm font-bold"
               >
                 Shop Now
               </Button>

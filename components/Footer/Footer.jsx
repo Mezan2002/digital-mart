@@ -46,32 +46,32 @@ const Footer = () => {
               Customer Service
             </p>
             <ul className="flex flex-col items-start">
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Privacy Policy
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Refund Policy
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Shipping & Return
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Term & Conditions
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Advanced Search
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Store Locations
                 </Link>
@@ -83,32 +83,32 @@ const Footer = () => {
               Shop By Categories
             </p>
             <ul className="flex flex-col items-start">
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Smartphone
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Headphones
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Computer & Desktop
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Cameras & Photos
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Laptop & Ipad
                 </Link>
               </li>
-              <li className="my-4 hover:translate-x-5 inline-block duration-500">
+              <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                 <Link href="/" className="">
                   Airpods
                 </Link>
@@ -119,7 +119,7 @@ const Footer = () => {
             <div>
               <p className="pb-1 md:text-lg text-sm font-bold">Contact Us</p>
               <p className="my-6">Got Question? Call us 24/7</p>
-              <p className="my-6 text-3xl text-violet-500 font-semibold">
+              <p className="my-6 text-3xl text-indigo-500 font-semibold">
                 +555-1900-2628
               </p>
               <p className="my-6">
@@ -221,27 +221,27 @@ const Footer = () => {
                     Privacy Policy
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Refund Policy
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Shipping & Return
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Term & Conditions
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Advanced Search
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Store Locations
                   </Link>
@@ -259,27 +259,27 @@ const Footer = () => {
                     Smartphone
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Headphones
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Computer & Desktop
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Cameras & Photos
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Laptop & Ipad
                   </Link>
                 </li>
-                <li className="my-4 hover:translate-x-5 inline-block duration-500">
+                <li className="my-4 hover:text-indigo-500 hover:translate-x-4 inline-block duration-500">
                   <Link href="/" className="">
                     Airpods
                   </Link>

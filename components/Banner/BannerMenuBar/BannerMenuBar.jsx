@@ -8,71 +8,74 @@ import { SlScreenTablet } from "react-icons/sl";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 const BannerMenuBar = () => {
+  const bannerMenuItems = [
+    {
+      title: "Computer & Laptop",
+      href: "/",
+      icon: <RiComputerLine className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Tablet & IPad",
+      href: "/",
+      icon: <SlScreenTablet className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Printer",
+      href: "/",
+      icon: <BsPrinter className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Smartphones",
+      href: "/",
+      icon: <FiSmartphone className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Cameras",
+      href: "/",
+      icon: <BsCamera className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Keyboard & Mouse",
+      href: "/",
+      icon: <BsKeyboard className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Video Games",
+      href: "/",
+      icon: <PiGameControllerDuotone className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Smart Watch",
+      href: "/",
+      icon: <BsSmartwatch className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Headphones & Audios",
+      href: "/",
+      icon: <TfiHeadphoneAlt className="h-5 w-5 mr-2" />,
+    },
+    {
+      title: "Hot Selling Products",
+      href: "/",
+      icon: <PiFireBold className="h-5 w-5 mr-2" />,
+    },
+  ];
   return (
     <div>
       <Card className="shadow-none">
         <div className="px-8 pt-2 pb-2">
           <ul className="text-sm font-semibold">
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <RiComputerLine className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Computer & Laptop</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <SlScreenTablet className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Tablet & IPad</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <BsPrinter className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Printer</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <FiSmartphone className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Smartphones</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <BsCamera className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Cameras</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <BsKeyboard className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Keyboard & Mouse</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <PiGameControllerDuotone className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Video Games</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <BsSmartwatch className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Smart Watch</Link>
-            </li>
-            <li className="py-3.5 border-b-1 flex items-center">
-              <span>
-                <TfiHeadphoneAlt className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Headphones & Audios</Link>
-            </li>
-            <li className="py-3 flex items-center">
-              <span>
-                <PiFireBold className="h-5 w-5 mr-2" />
-              </span>
-              <Link href="/">Hot Selling Products</Link>
-            </li>
+            {bannerMenuItems.map((item, i) => (
+              <li
+                key={i}
+                className={`py-3.5 hover:text-indigo-500 duration-500  flex items-center ${
+                  i === 9 ? "border-b-none" : "border-b-1"
+                }`}
+              >
+                <span>{item.icon}</span>
+                <Link href={item.href}>{item.title}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </Card>
