@@ -35,18 +35,23 @@ const NavigationBar = () => {
     "Keyboards",
     "Speakers",
   ];
-
   const menuItems = [
+    "Home",
     "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
+    "Categories",
+    "Hot Sale",
+    "New Arrival",
+    "Blogs",
+    "Support",
     "Log Out",
+  ];
+  const navItems = [
+    { title: "Home", path: "/" },
+    { title: "Categories", path: "/" },
+    { title: "Hot Sale", path: "/" },
+    { title: "New Arrival", path: "/" },
+    { title: "Blogs", path: "/" },
+    { title: "Support", path: "/" },
   ];
   return (
     <div>
@@ -60,6 +65,15 @@ const NavigationBar = () => {
           className="sm:hidden"
         />
         <NavbarContent justify="start" className="w-3/12 items-center">
+          <div className="md:hidden block">
+            <Image
+              src="https://i.ibb.co/Jsqf7SN/logo.png"
+              alt="Digital Mart's Logo"
+              width={1000}
+              height={1000}
+              className="h-10 w-10"
+            />
+          </div>
           <div className="mr-4 hidden md:flex">
             <Image
               src="https://i.ibb.co/Jsqf7SN/logo.png"
@@ -75,15 +89,6 @@ const NavigationBar = () => {
         </NavbarContent>
 
         <div className="flex items-center md:w-6/12 md:border h-[50px] md:bg-[#F4F4F6] rounded-lg">
-          <div className="md:hidden block">
-            <Image
-              src="https://i.ibb.co/Jsqf7SN/logo.png"
-              alt="Digital Mart's Logo"
-              width={1000}
-              height={1000}
-              className="h-10 w-10"
-            />
-          </div>
           <Select
             radius="sm"
             placeholder="All Categories"
@@ -148,7 +153,7 @@ const NavigationBar = () => {
                     ? "danger"
                     : "foreground"
                 }
-                className="w-full"
+                className="w-full border-b-2 py-2"
                 href="#"
                 size="lg"
               >
@@ -190,42 +195,19 @@ const NavigationBar = () => {
       <div className="hidden md:block w-[78%] mx-auto pb-4">
         <Divider className="my-4" />
         <div className="flex items-center justify-between">
-          <div className="flex items-center border-r-2 font-semibold pr-10 w-2/12">
+          <div className="flex items-center border-r-2 font-semibold pr-10 w-[20%]">
             <RxHamburgerMenu className="text-xl" />
             <p className="ml-2 uppercase text-lg">All Categories</p>
           </div>
           <div className="w-6/12">
             <ul className="flex items-center justify-between">
-              <li>
-                <Link href="/" className="text-black uppercase font-semibold">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-black uppercase font-semibold">
-                  Categories
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-black uppercase font-semibold">
-                  Hot Sale
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-black uppercase font-semibold">
-                  New Arrival
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-black uppercase font-semibold">
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-black uppercase font-semibold">
-                  Support
-                </Link>
-              </li>
+              {navItems.map((nav) => (
+                <li key={nav.title}>
+                  <Link href="/" className="text-black uppercase font-semibold">
+                    {nav.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="w-3/12 flex items-end justify-end">
