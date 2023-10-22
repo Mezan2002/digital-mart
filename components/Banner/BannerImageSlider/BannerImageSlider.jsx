@@ -10,17 +10,17 @@ const BannerImageSlider = () => {
     {
       title: "Hot Deals",
       subTitle: "Hot Deals Headphones",
-      image: "https://i.ibb.co/6yhgGHk/asset-24.jpg",
+      image: "https://i.ibb.co/rdJWxpg/asset-24.jpg",
     },
     {
       title: "Best Sales",
       subTitle: "Best Deals Keyborads",
-      image: "https://i.ibb.co/j8DNz8K/asset-23.jpg",
+      image: "https://i.ibb.co/8YPLxRj/asset-23.jpg",
     },
     {
       title: "Top Deals",
       subTitle: "Top Deals Accesories",
-      image: "https://i.ibb.co/S0Gv9mP/Untitled-design.png",
+      image: "https://i.ibb.co/sVgj4Vt/Untitled-design.png",
     },
   ];
   return (
