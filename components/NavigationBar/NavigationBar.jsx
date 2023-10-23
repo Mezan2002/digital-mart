@@ -54,7 +54,7 @@ const NavigationBar = () => {
     { title: "Support", path: "/" },
   ];
   return (
-    <div>
+    <div className="sticky top-0 bg-white z-50 pt-1">
       <Navbar
         className="bg-white mt-3"
         onMenuOpenChange={setIsMenuOpen}

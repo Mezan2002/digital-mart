@@ -1,4 +1,4 @@
-import { Card, CardBody, Tooltip } from "@nextui-org/react";
+import { Card, CardBody, Chip, Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -50,6 +50,10 @@ const TopSellProductCard = () => {
               className="shadow-none group relative rounded-3xl"
             >
               <CardBody className="overflow-x-hidden">
+                {/* discount amount start */}
+                <Chip className="text-white bg-indigo-500"> -20% </Chip>
+                {/* discount amount end */}
+
                 {/* card top container start */}
                 <div>
                   {/* card top image container start */}
@@ -75,7 +79,7 @@ const TopSellProductCard = () => {
                     {miniIconsData.map((icon) => (
                       <div key={icon.icon}>
                         <Tooltip
-                          delay={500}
+                          delay={400}
                           showArrow
                           placement="left"
                           content={icon.tooltipContent}
@@ -85,7 +89,7 @@ const TopSellProductCard = () => {
                               "bg-gradient-to-br from-white to-neutral-300 dark:bg-white",
                           }}
                         >
-                          <button className="bg-gray-200 duration-500 hover:bg-black hover:text-white p-2 rounded-full">
+                          <button className="duration-500 bg-gray-100 hover:bg-black hover:text-white p-2 rounded-full">
                             {icon.icon}
                           </button>
                         </Tooltip>
@@ -104,6 +108,9 @@ const TopSellProductCard = () => {
                   <div className="flex items-center justify-between mt-3">
                     <h2 className="font-bold text-lg text-indigo-500">
                       $110.00
+                      <sup className="text-gray-400">
+                        <del>$150.00</del>
+                      </sup>
                     </h2>
                     <div className="flex items-center">
                       <AiFillStar className="text-yellow-400" />

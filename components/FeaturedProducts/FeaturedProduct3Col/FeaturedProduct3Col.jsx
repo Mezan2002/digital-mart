@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const FeaturesProducts = () => {
+const FeaturedProduct3Col = () => {
   const featuredProductsData = [
     {
       title: "Surface",
@@ -67,4 +67,4 @@ const FeaturesProducts = () => {
   );
 };
 
-export default FeaturesProducts;
+export default FeaturedProduct3Col;
