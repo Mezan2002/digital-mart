@@ -2,6 +2,7 @@ import Banner from "@/components/Banner/Banner";
 import DiscountSellProductCard from "@/components/DiscountSellProductCard/DiscountSellProductCard";
 import FeaturedProduct2Col from "@/components/FeaturedProducts/FeaturedProduct2Col/FeaturedProduct2Col";
 import FeaturedProduct3Col from "@/components/FeaturedProducts/FeaturedProduct3Col/FeaturedProduct3Col";
+import FeaturedProductConsole from "@/components/FeaturedProducts/FeaturedProductConsole/FeaturedProductConsole";
 import TopSellProductCard from "@/components/TopSellProductCard/TopSellProductCard";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <TopSellProductCard />
         <FeaturedProduct2Col />
         <DiscountSellProductCard />
+        <FeaturedProductConsole />
       </div>
     </main>
   );
