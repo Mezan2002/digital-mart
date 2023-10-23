@@ -1,4 +1,4 @@
-import { Card, CardBody, Tooltip } from "@nextui-org/react";
+import { Card, CardBody, Chip, Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 import { PiArrowsClockwiseBold } from "react-icons/pi";
 
-const TopSellProductCard = () => {
+const DiscountSellProductCard = () => {
   const miniIconsData = [
     {
       icon: <AiOutlineHeart className="h-4 w-4" />,
@@ -30,12 +30,13 @@ const TopSellProductCard = () => {
   ];
 
   const productData = [];
-
   return (
     <section className="my-14">
       <div>
         <div className="uppercase font-medium flex items-center justify-between mb-8 px-4 md:px-0">
-          <h3 className="md:text-3xl text-xl font-bold">Top Sell Products</h3>
+          <h3 className="md:text-3xl text-xl font-bold">
+            Discount Sell Products
+          </h3>
           <Link
             href="/"
             className="md:text-sm text-xs hover:underline hover:text-indigo-400 duration-500"
@@ -50,6 +51,10 @@ const TopSellProductCard = () => {
               className="shadow-none group relative rounded-3xl"
             >
               <CardBody className="overflow-x-hidden">
+                {/* discount amount start */}
+                <Chip className="text-white bg-indigo-500"> -20% </Chip>
+                {/* discount amount end */}
+
                 {/* card top container start */}
                 <div>
                   {/* card top image container start */}
@@ -104,6 +109,9 @@ const TopSellProductCard = () => {
                   <div className="flex items-center justify-between mt-3">
                     <h2 className="font-bold text-lg text-indigo-500">
                       $110.00
+                      <sup className="text-gray-400">
+                        <del>$150.00</del>
+                      </sup>
                     </h2>
                     <div className="flex items-center">
                       <AiFillStar className="text-yellow-400" />
@@ -124,4 +132,4 @@ const TopSellProductCard = () => {
   );
 };
 
-export default TopSellProductCard;
+export default DiscountSellProductCard;
