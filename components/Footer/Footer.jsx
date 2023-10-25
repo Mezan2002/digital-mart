@@ -12,23 +12,23 @@ import { MailIcon } from "../Icons/MailIcon";
 
 const Footer = () => {
   return (
-    <footer className="dark:bg-gray-800 dark:text-gray-50">
+    <footer className="dark:bg-gray-800 dark:text-gray-50 pb-16 md:pb-0">
       <div className="bg-indigo-500 w-full h-40">
-        <div className="flex items-center h-40 w-full justify-between gap-4 md:max-w-[1480px] md:mx-auto">
-          <div className="w-[30%]">
-            <h2 className="text-white font-medium text-3xl flex items-center">
+        <div className="flex flex-col md:flex-row py-5 md:py-0 items-center h-full md:h-40 w-full justify-between md:gap-4 md:max-w-[1480px] md:mx-auto">
+          <div className="md:w-[30%]">
+            <h2 className="text-white font-medium md:text-3xl text-2xl flex items-center">
               <span>
                 <FaPaperPlane className="text-white mr-3" />
               </span>
               Sign up to Newsletter
             </h2>
           </div>
-          <div className="w-[35%]">
-            <p className="text-white text-lg">
+          <div className="md:w-[35%]">
+            <p className="text-white md:text-lg text-xs">
               Get our emails for info on new items, sales and more.
             </p>
           </div>
-          <div className="w-4/12">
+          <div className="md:w-4/12 w-9/12 mx-auto">
             <Input
               type="email"
               placeholder="you@example.com"
@@ -51,6 +51,7 @@ const Footer = () => {
             >
               <div className="flex items-center justify-center rounded-full">
                 <Image
+                  draggable
                   src="https://i.ibb.co/Jsqf7SN/logo.png"
                   alt="Digital Mart's Logo"
                   width={500}

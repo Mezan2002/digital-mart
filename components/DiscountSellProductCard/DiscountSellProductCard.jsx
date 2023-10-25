@@ -60,6 +60,7 @@ const DiscountSellProductCard = () => {
                   {/* card top image container start */}
                   <div className="w-[250px] mx-auto">
                     <Image
+                      draggable
                       src="https://i.ibb.co/ChjrszX/asset-6.jpg"
                       alt="Image"
                       height={1000}
@@ -67,6 +68,7 @@ const DiscountSellProductCard = () => {
                       className="block group-hover:hidden transition-all duration-1000 max-h-80"
                     />
                     <Image
+                      draggable
                       src="https://i.ibb.co/RTwYdrV/asset-7.jpg"
                       alt="Image"
                       height={1000}

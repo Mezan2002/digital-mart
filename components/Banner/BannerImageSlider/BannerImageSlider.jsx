@@ -53,6 +53,7 @@ const BannerImageSlider = () => {
               </Button>
             </div>
             <Image
+              draggable
               src={dt.image}
               alt="Image"
               className="md:w-full rounded-3xl object-cover object-center h-[440px] md:h-full"

@@ -67,6 +67,7 @@ const NavigationBar = () => {
         <NavbarContent justify="start" className="w-3/12 items-center">
           <div className="md:hidden block">
             <Image
+              draggable
               src="https://i.ibb.co/Jsqf7SN/logo.png"
               alt="Digital Mart's Logo"
               width={1000}
@@ -76,6 +77,7 @@ const NavigationBar = () => {
           </div>
           <div className="mr-4 hidden md:flex">
             <Image
+              draggable
               src="https://i.ibb.co/Jsqf7SN/logo.png"
               alt="Digital Mart's Logo"
               width={1000}

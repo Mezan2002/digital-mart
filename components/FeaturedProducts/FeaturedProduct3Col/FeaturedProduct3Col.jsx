@@ -53,6 +53,7 @@ const FeaturedProduct3Col = () => {
                 </Link>
               </div>
               <Image
+                draggable
                 src={data.imageURL}
                 alt="Image"
                 width={1000}
