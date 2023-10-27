@@ -47,7 +47,7 @@ const NavigationBar = () => {
   ];
   const navItems = [
     { title: "Home", path: "/" },
-    { title: "Categories", path: "/" },
+    { title: "Categories", path: "/categories" },
     { title: "Hot Sale", path: "/" },
     { title: "New Arrival", path: "/" },
     { title: "Blogs", path: "/" },
@@ -205,7 +205,10 @@ const NavigationBar = () => {
             <ul className="flex items-center justify-between">
               {navItems.map((nav) => (
                 <li key={nav.title}>
-                  <Link href="/" className="text-black uppercase font-semibold">
+                  <Link
+                    href={nav.path}
+                    className="text-black uppercase font-semibold"
+                  >
                     {nav.title}
                   </Link>
                 </li>

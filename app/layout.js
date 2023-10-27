@@ -17,10 +17,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}`}>
+      <body
+        className={`${montserrat.className} md:min-h-[93vh] min-h-screen bg-[#F1F3F7]`}
+      >
         <Providers>
           <NavigationBar />
-          {children}
+          <div className="md:max-w-[1480px] md:mx-auto py-8 -z-50">
+            {children}
+          </div>
           <Footer />
         </Providers>
       </body>

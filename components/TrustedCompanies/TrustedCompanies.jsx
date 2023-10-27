@@ -15,36 +15,39 @@ const TrustedCompanies = () => {
   ];
   return (
     <section className="">
-      <div className="mt-16 md:-mx-12">
+      <div className="mt-16 md:-mx-16 h-28">
         <Swiper
           slidesPerView={1}
-          spaceBetween={10}
+          spaceBetween={0}
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 10,
+              spaceBetween: 0,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
           }}
           className="mySwiper cursor-grab"
         >
           {companyLogos.map((logo) => (
-            <SwiperSlide key={logo}>
-              <Image
-                draggable
-                src={logo}
-                width={1000}
-                height={1000}
-                alt="Image"
-                className="max-w-xs"
-              />
+            <SwiperSlide className="" key={logo}>
+              <div>
+                <Image
+                  loading="lazy"
+                  draggable
+                  src={logo}
+                  width={1000}
+                  height={1000}
+                  alt="Image"
+                  className="mx-auto"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
