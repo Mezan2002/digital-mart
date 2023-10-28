@@ -2,6 +2,7 @@
 import { Accordion, AccordionItem, Input } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { AiFillFacebook } from "react-icons/ai";
 import { BsGoogle, BsPinterest } from "react-icons/bs";
 import { FaPaperPlane } from "react-icons/fa";

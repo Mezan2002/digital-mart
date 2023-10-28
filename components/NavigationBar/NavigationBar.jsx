@@ -24,16 +24,43 @@ import { SearchIcon } from "../Icons/SearchIcon";
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const selectItems = [
-    "All Categories",
-    "Electronics",
-    "Mobiles",
-    "Earphones",
-    "Accessories",
-    "Watchs",
-    "Laptops",
-    "Keyboards",
-    "Speakers",
+  const categorieItems = [
+    {
+      title: "Computer & Laptop",
+    },
+    {
+      title: "Tablet & IPad",
+    },
+    {
+      title: "Printer",
+    },
+    {
+      title: "Smartphones",
+    },
+    {
+      title: "Cameras",
+    },
+    {
+      title: "Keyboard & Mouse",
+    },
+    {
+      title: "Video Games",
+    },
+    {
+      title: "Smart Watch",
+    },
+    {
+      title: "Headphones & Audios",
+    },
+    {
+      title: "Video Projectors",
+    },
+    {
+      title: "Networking Devices",
+    },
+    {
+      title: "Hot Selling Products",
+    },
   ];
   const menuItems = [
     "Home",
@@ -97,9 +124,9 @@ const NavigationBar = () => {
             className="w-4/12 hidden md:block shadow-none rounded-l-full hover:bg-[#F4F4F6]"
             size="sm"
           >
-            {selectItems.map((item) => (
-              <SelectItem key={item} value={item}>
-                {item}
+            {categorieItems.map((item) => (
+              <SelectItem key={item.title} value={item.title}>
+                {item.title}
               </SelectItem>
             ))}
           </Select>
@@ -174,9 +201,9 @@ const NavigationBar = () => {
               className="w-5/12 shadow-none rounded-l-full hover:bg-[#F4F4F6]"
               size="sm"
             >
-              {selectItems.map((item) => (
-                <SelectItem key={item} value={item}>
-                  {item}
+              {categorieItems.map((item) => (
+                <SelectItem key={item.title} value={item.title}>
+                  {item.title}
                 </SelectItem>
               ))}
             </Select>
