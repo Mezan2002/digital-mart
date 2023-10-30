@@ -11,8 +11,8 @@ import TrustedCompanies from "@/components/TrustedCompanies/TrustedCompanies";
 
 export default function Home() {
   return (
-    <main className="md:min-h-[93vh] min-h-screen bg-[#F1F3F7]">
-      <div className="md:max-w-[1480px] md:mx-auto py-8 -z-50">
+    <main className="">
+      <div className="">
         <Banner />
         <FeaturedProduct3Col />
         <TopSellProductCard />
