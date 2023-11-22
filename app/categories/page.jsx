@@ -85,7 +85,7 @@ const CategoriesPage = () => {
   ];
   return (
     <section>
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-4 grid-cols-1 px-5 md:px-0 gap-5">
         {categorieItems.map((item) => (
           <Link key={item.title} href={item.href}>
             <Card className="shadow-none">

@@ -1,20 +1,11 @@
 "use client";
 
+import ProductCard from "@/components/ProductCard/ProductCard";
 import SingleCategorieHeader from "@/components/SingleCategorieHeader/SingleCategorieHeader";
-import {
-  Accordion,
-  AccordionItem,
-  Card,
-  CardBody,
-  Checkbox,
-  Select,
-  SelectItem,
-  Tooltip,
-} from "@nextui-org/react";
-import Image from "next/image";
+import Slider from "@mui/material/Slider";
+import { Button, Checkbox, Input, Select, SelectItem } from "@nextui-org/react";
 import { useState } from "react";
 import {
-  AiFillStar,
   AiOutlineEye,
   AiOutlineHeart,
   AiOutlineShoppingCart,
@@ -24,6 +15,14 @@ import { BsGrid } from "react-icons/bs";
 import { PiArrowsClockwiseBold } from "react-icons/pi";
 
 const ComputerAndLaptopPage = () => {
+  // State to manage the slider value
+  const [value, setValue] = useState([0, 5000]);
+
+  // Function to handle slider value change
+  const handleSliderChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   const categorieItems = [
     {
       title: "Computer & Laptop",
@@ -62,10 +61,57 @@ const ComputerAndLaptopPage = () => {
       title: "Hot Selling Products",
     },
   ];
-  const [selectedKeys, setSelectedKeys] = useState(new Set(["1", "2", "3"]));
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+  const brandItems = [
+    {
+      brandImage: "",
+      brandTitle: "Apple",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Real Me",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Samsung",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Walton",
+    },
 
+    {
+      brandImage: "",
+      brandTitle: "Lenovo",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Google",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Microsoft",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Sony",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Canon",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Symphony",
+    },
+    {
+      brandImage: "",
+      brandTitle: "Itel",
+    },
+    {
+      brandImage: "",
+      brandTitle: "One Plus",
+    },
+  ];
   const miniIconsData = [
     {
       icon: <AiOutlineHeart className="h-4 w-4" />,
@@ -134,100 +180,111 @@ const ComputerAndLaptopPage = () => {
       </div>
       <div className="grid grid-cols-5 gap-4">
         <div className="col-span-1 border-r-1 pr-8">
-          <Accordion selectedKeys={selectedKeys}>
-            <AccordionItem key="1" aria-label="Categories" title="Categories">
+          <div>
+            <div className="mb-10">
+              <h4 className="my-3 uppercase border-b-1 pb-2 flex justify-between items-center text-2xl font-semibold">
+                Categories{" "}
+                <span className="text-sm h-6 w-6 rounded-full bg-indigo-500 text-white flex items-center justify-center">
+                  {categorieItems.length}
+                </span>
+              </h4>
               {categorieItems.map((item) => (
                 <Checkbox key={item.title} className="my-0.5 block">
                   {item.title}
                 </Checkbox>
               ))}
-            </AccordionItem>
-            <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-              {defaultContent}
-            </AccordionItem>
-            <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-              {defaultContent}
-            </AccordionItem>
-          </Accordion>
+            </div>
+            <div className="mb-10">
+              <h4 className="my-3 uppercase border-b-1 pb-2 flex justify-between items-center text-2xl font-semibold">
+                Brands{" "}
+                <span className="text-sm h-6 w-6 rounded-full bg-indigo-500 text-white flex items-center justify-center">
+                  {brandItems.length}
+                </span>
+              </h4>
+              {brandItems.map((item) => (
+                <Checkbox key={item.brandTitle} className="my-0.5 block">
+                  {item.brandTitle}
+                </Checkbox>
+              ))}
+            </div>
+            <div className="mb-10">
+              <h4 className="my-3 uppercase border-b-1 pb-2 flex justify-between items-center text-2xl font-semibold">
+                Price Range{" "}
+              </h4>
+              <div className="flex items-center mt-3">
+                <Input
+                  type="text"
+                  placeholder="Min"
+                  className="border rounded-xl"
+                  value={value[0]}
+                  onChange={(e) =>
+                    handleSliderChange(e, [e.target.value, value[1]])
+                  }
+                  startContent={
+                    <div className="pointer-events-none flex items-center">
+                      <span className="text-default-400 text-small">$</span>
+                    </div>
+                  }
+                />
+                <p className="mx-2"> - </p>
+                <Input
+                  type="text"
+                  value={value[1]}
+                  onChange={(e) =>
+                    handleSliderChange(e, [value[0], e.target.value])
+                  }
+                  placeholder="Max"
+                  className="border rounded-xl"
+                  startContent={
+                    <div className="pointer-events-none flex items-center">
+                      <span className="text-default-400 text-small">$</span>
+                    </div>
+                  }
+                />
+              </div>
+              <div className="mt-2 px-2">
+                <Slider
+                  value={value}
+                  onChange={handleSliderChange}
+                  valueLabelDisplay="auto"
+                  valueLabelFormat={(value) => `$${value}`}
+                  min={0}
+                  max={5000}
+                />
+              </div>
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-semibold">
+                  {" "}
+                  Price: ${value[0]} - ${value[1]}{" "}
+                </p>
+                <Button size="sm" className="bg-indigo-500 text-white">
+                  Find
+                </Button>
+              </div>
+            </div>
+            <div className="mb-10">
+              <h4 className="my-3 uppercase border-b-1 pb-2 flex justify-between items-center text-2xl font-semibold">
+                Products Status{" "}
+              </h4>
+              <Checkbox key="In Stock" className="my-0.5 block">
+                In Stock
+              </Checkbox>
+              <Checkbox key="Out of Stock" className="my-0.5 block">
+                Out of Stock
+              </Checkbox>
+              <Checkbox key="On Sale" className="my-0.5 block">
+                On Sale
+              </Checkbox>
+            </div>
+          </div>
         </div>
         <div className="col-span-4 pl-3">
           <div className="grid md:grid-cols-4 grid-cols-1 px-4 md:px-0">
-            {[0, 1, 2, 3, 4, 5, 6, 7].map((product) => (
-              <Card
-                key={product}
-                className="shadow-none group relative rounded-none border-l-1 border-b-1 hover:z-40  hover:shadow-2xl"
-              >
-                <CardBody className="overflow-x-hidden">
-                  {/* card top container start */}
-                  <div>
-                    {/* card top image container start */}
-                    <div className="w-[250px] mx-auto">
-                      <Image
-                        draggable
-                        src="https://i.ibb.co/ChjrszX/asset-6.jpg"
-                        alt="Image"
-                        height={1000}
-                        width={1000}
-                        className="block group-hover:hidden transition-all duration-1000 max-h-80"
-                      />
-                      <Image
-                        draggable
-                        src="https://i.ibb.co/RTwYdrV/asset-7.jpg"
-                        alt="Image"
-                        height={1000}
-                        width={1000}
-                        className="transition-all duration-1000 hidden group-hover:block max-h-80"
-                      />
-                    </div>
-                    {/* card top image container end */}
-                    {/* buttons container start */}
-                    <div className="absolute top-6 -right-5 group-hover:right-5 opacity-0  duration-500 group-hover:opacity-100 flex flex-col items-center gap-3">
-                      {miniIconsData.map((icon) => (
-                        <div key={icon.icon}>
-                          <Tooltip
-                            delay={400}
-                            showArrow
-                            placement="left"
-                            content={icon.tooltipContent}
-                            classNames={{
-                              base: "py-2 px-4 shadow-xl text-black bg-gradient-to-br from-white to-neutral-300",
-                              arrow:
-                                "bg-gradient-to-br from-white to-neutral-300 dark:bg-white",
-                            }}
-                          >
-                            <button className="duration-500 bg-gray-100 hover:bg-black hover:text-white p-2 rounded-full">
-                              {icon.icon}
-                            </button>
-                          </Tooltip>
-                        </div>
-                      ))}
-                    </div>
-                    {/* buttons container end */}
-                  </div>
-                  {/* card top container end */}
-                  {/* card content container start */}
-                  <div>
-                    <span className="uppercase cursor-pointer">Umino</span>
-                    <p className="text-lg font-medium cursor-pointer hover:text-indigo-500 duration-500">
-                      Samsung Galaxy S21 FE 8GB/128GB - White
-                    </p>
-                    <div className="flex items-center justify-between mt-3">
-                      <h2 className="font-bold text-lg text-indigo-500">
-                        $110.00
-                      </h2>
-                      <div className="flex items-center">
-                        <AiFillStar className="text-yellow-400" />
-                        <AiFillStar className="text-yellow-400" />
-                        <AiFillStar className="text-yellow-400" />
-                        <AiFillStar className="text-yellow-400" />
-                        <AiFillStar className="text-yellow-400" />
-                      </div>
-                    </div>
-                  </div>
-                  {/* card content container end */}
-                </CardBody>
-              </Card>
-            ))}
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+              (product) => (
+                <ProductCard key={product} isGridCard={true} />
+              )
+            )}
           </div>
         </div>
       </div>
