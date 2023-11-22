@@ -4,16 +4,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 import ProductCard from "../ProductCard/ProductCard";
 
 const DiscountSellProductCard = () => {
   const productData = [];
   return (
-    <section className="my-14">
+    <section className="my-14 px-4 md:px-0">
       <div>
         <div className="uppercase font-medium flex items-center justify-between mb-8 px-4 md:px-0">
-          <h3 className="md:text-3xl text-xl font-bold">
+          <h3 className="md:text-3xl text-xl font-bold md:block hidden">
             Discount Sell Products
+          </h3>
+          <h3 className="md:text-3xl text-xl font-bold block md:hidden">
+            Discount Products
           </h3>
           <Link
             href="/"
@@ -24,6 +28,16 @@ const DiscountSellProductCard = () => {
         </div>
         <div className="">
           <Swiper
+            style={{
+              "--swiper-pagination-color": "#6366F1",
+            }}
+            autoplay={{
+              delay: 5000,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Autoplay]}
             slidesPerView={1}
             spaceBetween={10}
             breakpoints={{

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 // import required modules
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
@@ -43,6 +44,16 @@ const NewArrivalProducts = () => {
         </div>
         <div className="md:col-span-4 px-4 md:px-0 mt-4 md:mt-0">
           <Swiper
+            style={{
+              "--swiper-pagination-color": "#6366F1",
+            }}
+            autoplay={{
+              delay: 5000,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Autoplay]}
             slidesPerView={1}
             spaceBetween={10}
             breakpoints={{
