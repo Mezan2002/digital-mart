@@ -7,33 +7,9 @@ import "swiper/css/pagination";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  AiOutlineEye,
-  AiOutlineHeart,
-  AiOutlineShoppingCart,
-} from "react-icons/ai";
-import { PiArrowsClockwiseBold } from "react-icons/pi";
 import ProductCard from "../ProductCard/ProductCard";
 
 const NewArrivalProducts = () => {
-  const miniIconsData = [
-    {
-      icon: <AiOutlineHeart className="h-4 w-4" />,
-      tooltipContent: "ADD TO WISHLIST",
-    },
-    {
-      icon: <PiArrowsClockwiseBold className="h-4 w-4" />,
-      tooltipContent: "COMPARE",
-    },
-    {
-      icon: <AiOutlineEye className="h-4 w-4" />,
-      tooltipContent: "QUICK VIEW",
-    },
-    {
-      icon: <AiOutlineShoppingCart className="h-4 w-4" />,
-      tooltipContent: "ADD TO CART",
-    },
-  ];
   return (
     <section className="mt-10">
       <div className="uppercase font-medium flex items-center justify-between mb-8 px-4 md:px-0">

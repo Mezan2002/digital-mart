@@ -1,3 +1,4 @@
+import BottomNavMobile from "@/components/BottomNavMobile/BottomNavMobile";
 import Footer from "@/components/Footer/Footer";
 import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import { Montserrat } from "next/font/google";
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
             {children}
           </div>
           <Footer />
+          <BottomNavMobile />
         </Providers>
       </body>
     </html>

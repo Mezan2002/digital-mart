@@ -1,5 +1,4 @@
 import Banner from "@/components/Banner/Banner";
-import BottomNavMobile from "@/components/BottomNavMobile/BottomNavMobile";
 import DiscountSellProductCard from "@/components/DiscountSellProductCard/DiscountSellProductCard";
 import FeaturedProduct2Col from "@/components/FeaturedProducts/FeaturedProduct2Col/FeaturedProduct2Col";
 import FeaturedProduct3Col from "@/components/FeaturedProducts/FeaturedProduct3Col/FeaturedProduct3Col";
@@ -22,7 +21,6 @@ export default function Home() {
         <NewArrivalProducts />
         <TrustedCompanies />
         <ServicesWeProvide />
-        <BottomNavMobile />
       </div>
     </main>
   );

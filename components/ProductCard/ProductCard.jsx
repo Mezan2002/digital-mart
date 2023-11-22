@@ -35,8 +35,8 @@ const ProductCard = ({ isTopSell, isOffSell, isNewArrival, isGridCard }) => {
           : "rounded-3xl"
       }`}
     >
-      <CardBody className="overflow-x-hidden">
-        {/* discount amount start */}
+      <CardBody className="overflow-x-hidden cursor-pointer">
+        {/* chip start */}
         {isTopSell && (
           <Chip className="text-white bg-indigo-500 uppercase">
             Best Selling
@@ -51,7 +51,7 @@ const ProductCard = ({ isTopSell, isOffSell, isNewArrival, isGridCard }) => {
           </Chip>
         )}
 
-        {/* discount amount end */}
+        {/* chip amount end */}
 
         {/* card top container start */}
         <div>
