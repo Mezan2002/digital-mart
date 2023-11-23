@@ -53,16 +53,13 @@ const Footer = () => {
               <div className="flex items-center justify-center rounded-full">
                 <Image
                   draggable
-                  src="https://i.ibb.co/Jsqf7SN/logo.png"
+                  src="https://i.ibb.co/JkL6V9N/Tosca-Orange-Modern-Online-Shop-Logo.png"
                   alt="Digital Mart's Logo"
                   width={500}
                   height={500}
-                  className="h-10 w-10"
+                  className="w-48"
                 />
               </div>
-              <p className="hidden md:block mt-2 font-bold text-inherit text-xl uppercase">
-                Digital Mart
-              </p>
             </a>
             <div className=" text-center md:text-left mt-5">
               <div className="text-sm">
