@@ -53,7 +53,7 @@ const Footer = () => {
               <div className="flex items-center justify-center rounded-full">
                 <Image
                   draggable
-                  src="https://i.ibb.co/JkL6V9N/Tosca-Orange-Modern-Online-Shop-Logo.png"
+                  src="/images/digital-mart-logo.png"
                   alt="Digital Mart's Logo"
                   width={500}
                   height={500}

@@ -59,7 +59,7 @@ const ProductCard = ({ isTopSell, isOffSell, isNewArrival, isGridCard }) => {
           <div className="w-[250px] mx-auto">
             <Image
               draggable
-              src="https://i.ibb.co/ChjrszX/asset-6.jpg"
+              src="/images/samsung-phone.jpg"
               alt="Image"
               height={1000}
               width={1000}
@@ -67,7 +67,7 @@ const ProductCard = ({ isTopSell, isOffSell, isNewArrival, isGridCard }) => {
             />
             <Image
               draggable
-              src="https://i.ibb.co/RTwYdrV/asset-7.jpg"
+              src="/images/samsung-phone-white.jpg"
               alt="Image"
               height={1000}
               width={1000}

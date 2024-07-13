@@ -9,7 +9,7 @@ const FeaturedProduct2Col = () => {
       bgColor: "bg-[#B10E23]",
       linkText: "Shop Iphone Red",
       href: "/",
-      imageURL: "https://i.ibb.co/dDRLPpV/asset-39.jpg",
+      imageURL: "/images/sale-image-1.jpg",
     },
     {
       title: "Super Sale",
@@ -17,7 +17,7 @@ const FeaturedProduct2Col = () => {
       bgColor: "bg-[#67589D]",
       linkText: "Shop B&O Beoplay",
       href: "/",
-      imageURL: "https://i.ibb.co/SxP1TQK/asset-37.jpg",
+      imageURL: "/images/sale-image-2.jpg",
     },
   ];
   return (

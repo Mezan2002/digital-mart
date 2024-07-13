@@ -28,7 +28,7 @@ const NewArrivalProducts = () => {
             draggable
             width={1000}
             height={1000}
-            src="https://i.ibb.co/ctdMhjk/nothing-phone-1.jpg"
+            src="/images/nothing-phone-1.jpg"
             alt="Image"
             className="h-full object-cover object-top rounded-3xl"
           />

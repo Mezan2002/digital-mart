@@ -93,24 +93,28 @@ const NavigationBar = () => {
         />
         <NavbarContent justify="start" className="w-3/12 items-center">
           <div className="md:hidden block">
-            <Image
-              draggable
-              src="https://i.ibb.co/JkL6V9N/Tosca-Orange-Modern-Online-Shop-Logo.png"
-              alt="Digital Mart's Logo"
-              width={1000}
-              height={1000}
-              className=""
-            />
+            <Link href="/">
+              <Image
+                draggable
+                src="/images/digital-mart-logo.png"
+                alt="Digital Mart's Logo"
+                width={1000}
+                height={1000}
+                className=""
+              />
+            </Link>
           </div>
           <div className="mr-4 hidden md:flex">
-            <Image
-              draggable
-              src="https://i.ibb.co/JkL6V9N/Tosca-Orange-Modern-Online-Shop-Logo.png"
-              alt="Digital Mart's Logo"
-              width={1000}
-              height={1000}
-              className="w-40"
-            />
+            <Link href="/">
+              <Image
+                draggable
+                src="/images/digital-mart-logo.png"
+                alt="Digital Mart's Logo"
+                width={1000}
+                height={1000}
+                className="w-40"
+              />
+            </Link>
           </div>
         </NavbarContent>
 

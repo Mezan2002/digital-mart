@@ -15,7 +15,7 @@ const BannerImageSlider = () => {
           Of Headphone
         </h5>
       ),
-      image: "https://i.ibb.co/rdJWxpg/asset-24.jpg",
+      image: "/images/sliderImage1.jpg",
     },
     {
       title: "Best Sales",
@@ -25,7 +25,7 @@ const BannerImageSlider = () => {
           For Keyboards
         </h5>
       ),
-      image: "https://i.ibb.co/8YPLxRj/asset-23.jpg",
+      image: "/images/sliderImage2.jpg",
     },
     {
       title: "Top Deals",
@@ -35,7 +35,7 @@ const BannerImageSlider = () => {
           On Accesories
         </h5>
       ),
-      image: "https://i.ibb.co/sVgj4Vt/Untitled-design.png",
+      image: "/images/sliderImage3.png",
     },
   ];
   return (

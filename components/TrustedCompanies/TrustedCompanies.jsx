@@ -7,11 +7,11 @@ import "swiper/css/pagination";
 
 const TrustedCompanies = () => {
   const companyLogos = [
-    "https://i.ibb.co/0XYq9V4/Frame-1000001516.png",
-    "https://i.ibb.co/rxqmNmT/Frame-1000001517.png",
-    "https://i.ibb.co/RjbSz90/Frame-1000001513.png",
-    "https://i.ibb.co/qxZxnXH/Frame-1000001515.png",
-    "https://i.ibb.co/QnZq8yX/Frame-1000001514.png",
+    "/images/zoom.png",
+    "/images/openAI.png",
+    "/images/meta.png",
+    "/images/amd.png",
+    "/images/tencent.png",
   ];
   return (
     <section className="">

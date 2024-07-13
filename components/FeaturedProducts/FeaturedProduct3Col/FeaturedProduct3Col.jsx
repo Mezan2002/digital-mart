@@ -10,7 +10,7 @@ const FeaturedProduct3Col = () => {
       bgColor: "bg-rose-500",
       linkText: "Shop Surface",
       href: "/",
-      imageURL: "https://i.ibb.co/XYjgN7R/asset-25-removebg-preview.png",
+      imageURL: "/images/featuredLaptopImage.png",
     },
     {
       title: "Gamepad",
@@ -18,7 +18,7 @@ const FeaturedProduct3Col = () => {
       bgColor: "bg-indigo-500",
       linkText: "Shop Deals",
       href: "/",
-      imageURL: "https://i.ibb.co/Cnp67mC/asset-26-removebg-preview.png",
+      imageURL: "/images/featuredGameControllerImage.png",
     },
     {
       title: "Cameras",
@@ -26,7 +26,7 @@ const FeaturedProduct3Col = () => {
       bgColor: "bg-teal-500",
       linkText: "Shop Cameras",
       href: "/",
-      imageURL: "https://i.ibb.co/80DW58Z/asset-27-removebg-preview.png",
+      imageURL: "/images/featuredCamera.png",
     },
   ];
   return (
